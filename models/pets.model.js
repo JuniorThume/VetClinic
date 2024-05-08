@@ -5,6 +5,9 @@ const Pet = db.define('tutor', {
     id: {
         type: Sequelize.INTEGER
     },
+    id_tutor: {
+        type: Sequelize.INTEGER
+    },
     name: {
         type: Sequelize.STRING
     },
