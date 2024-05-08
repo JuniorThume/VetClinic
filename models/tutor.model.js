@@ -11,8 +11,11 @@ const Tutor = db.define('tutor', {
     phone: {
         type: Sequelize.STRING
     },
-    date_of_birth: {
+    email: {
         type: Sequelize.STRING
+    },
+    date_of_birth: {
+        type: Sequelize.DATE
     },
     zip_code: {
         type: Sequelize.STRING

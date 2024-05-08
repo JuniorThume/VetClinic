@@ -3,7 +3,7 @@ const db = require('../db/connection');
 
 const Pet = db.define('tutor', {
     id: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
     },
     name: {
         type: Sequelize.STRING
@@ -12,13 +12,13 @@ const Pet = db.define('tutor', {
         type: Sequelize.STRING
     },
     carry: {
-        type: Sequelize.STRING
+        type: Sequelize.CHAR
     },
     weight: {
-        type: Sequelize.STRING
+        type: Sequelize.DOUBLE
     },
     date_of_birth: {
-        type: Sequelize.ARRAY
+        type: Sequelize.DATE
     }
 
 })
