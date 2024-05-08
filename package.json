@@ -1,0 +1,19 @@
+{
+  "name": "vetclinic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuniorThume/VetClinic.git"
+  },
+  "author": "Valmir Thume Junior",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuniorThume/VetClinic/issues"
+  },
+  "homepage": "https://github.com/JuniorThume/VetClinic#readme"
+}
