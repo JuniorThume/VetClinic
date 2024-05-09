@@ -1,9 +1,10 @@
 const Sequelize = require('sequelize');
 const db = require('../db/connection');
 
-const Tutor = db.define('tutor', {
+const Tutor = db.define('tutors', {
     id: {
-        type: Sequelize.STRING
+        primaryKey: true,
+        type: Sequelize.INTEGER,
     },
     name: {
         type: Sequelize.STRING
@@ -15,15 +16,15 @@ const Tutor = db.define('tutor', {
         type: Sequelize.STRING
     },
     date_of_birth: {
-        type: Sequelize.DATE
+        type: Sequelize.DATEONLY
     },
     zip_code: {
         type: Sequelize.STRING
     },
-    pets: {
-        type: Sequelize.ARRAY
+}, {
+    defaultScope: {
+        attributes: { exclude: ['updatedAt', 'createdAt', 'tutorId'] }
     }
-
 })
 
 module.exports = Tutor;

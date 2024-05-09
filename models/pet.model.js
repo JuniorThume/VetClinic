@@ -1,11 +1,10 @@
 const Sequelize = require('sequelize');
 const db = require('../db/connection');
+const Tutor = require('./tutor.model')
 
-const Pet = db.define('tutor', {
+const Pet = db.define('pets', {
     id: {
-        type: Sequelize.INTEGER
-    },
-    id_tutor: {
+        primaryKey: true,
         type: Sequelize.INTEGER
     },
     name: {
@@ -23,7 +22,13 @@ const Pet = db.define('tutor', {
     date_of_birth: {
         type: Sequelize.DATE
     }
+}, {
+    defaultScope: {
+        attributes: { exclude: ['updatedAt', 'createdAt', 'tutorId'] }
+    }
+});
 
-})
+Tutor.hasMany(Pet, {as: 'pets'});
+Pet.belongsTo(Tutor);
 
 module.exports = Pet;
