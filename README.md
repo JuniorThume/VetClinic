@@ -45,7 +45,7 @@ Você pode fazer uso do Postman para testar a aplicação nas rotas mencionadas 
 O projeto possui um arquivo .env para variáveis de ambiente que está definido da seguinte forma:
     
     PORT_DB=<porta que o servidor irá escutar>
-    NAME_DB=<nome do arquivo que armazena>
+    NAME_DB=<nome do arquivo que armazena os registros>
 
 Onde o instrutor terá que criar um arquivo .env com a exata mesma estrutura acima demonstrada.
 
