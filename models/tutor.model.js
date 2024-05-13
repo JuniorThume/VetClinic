@@ -16,7 +16,7 @@ const Tutor = db.define('tutors', {
         type: Sequelize.STRING
     },
     date_of_birth: {
-        type: Sequelize.DATEONLY
+        type: Sequelize.STRING
     },
     zip_code: {
         type: Sequelize.STRING

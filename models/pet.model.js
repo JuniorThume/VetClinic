@@ -20,7 +20,7 @@ const Pet = db.define('pets', {
         type: Sequelize.DOUBLE
     },
     date_of_birth: {
-        type: Sequelize.DATE
+        type: Sequelize.STRING
     }
 }, {
     defaultScope: {

@@ -1,16 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const PetController = require('../controllers/pet.controllers')
 
-router.post('/pet/:tutorId', function (req, res) {
 
-})
+router.post('/:tutorId', PetController.insertPet)
 
-router.put('/pet/:petId/tutor/:tutorId', function (req, res) {
+router.put('/:petId/tutors/:tutorId', PetController.updatePet)
 
-})
-
-router.delete('/pet/:petId/tutor/:tutorId', function (req, res) {
-
-})
+router.delete('/:petId/tutors/:tutorId', PetController.deletePet)
 
 module.exports = router;
